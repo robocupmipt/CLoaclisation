@@ -7,6 +7,8 @@ RemoteLoc::RemoteLoc(boost::shared_ptr <AL::ALBroker> broker, const std::string 
     kernel_(broker) {}
 
 void RemoteLoc::init() {
+  kernel_.StartModule();
+
   while (true) {
     std::string command(SmallLog("ENTER command", 1, true));
   }

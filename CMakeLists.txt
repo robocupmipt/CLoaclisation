@@ -15,6 +15,7 @@ set(_srcs
         include/config.h
         include/kernelcloc.h
         include/remoteloc.h
+        messenger/Custom.cpp
         main.cpp
         )
 
