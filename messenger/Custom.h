@@ -22,7 +22,7 @@
 namespace message
 {
 
-class Receive
+class ReceiveFromVision
 {
   public:
 
@@ -38,7 +38,33 @@ class Receive
  *
 */
 
-class Send
+class SendToVision
+{
+  public:
+
+  float x = 0, y = 0;
+
+  void Write(float x1, float y1);
+  void Print();
+};
+
+class ReceiveFromStrategy
+{
+  public:
+
+  float x = 0, y = 0;
+
+  void Write(float x1, float y1);
+  void Print();
+};
+
+/*
+ *
+ * Output class for receiving
+ *
+*/
+
+class SendToStrategy
 {
   public:
 

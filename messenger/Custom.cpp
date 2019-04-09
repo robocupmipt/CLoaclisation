@@ -13,20 +13,20 @@
  *
  */
 
+using namespace message;
+
 /*
  *
- * Receive class for receiving
+ * ReceiveFromVisionFromVision class for receiving
  *
 */
 
-using namespace message;
-
-void Receive::Print()
+void ReceiveFromVisionFromVision::Print()
 {
   std::cout << "(x,y) = (" << x << ", " << y << ")" << std::endl;
 }
 
-void Receive::Write(float x1, float y1)
+void ReceiveFromVisionFromVision::Write(float x1, float y1)
 {
   x = x1;
   y = y1;
@@ -34,16 +34,51 @@ void Receive::Write(float x1, float y1)
 
 /*
  *
- * Send class for trasnmission
+ * SendToVToVision class for trasnmission
  *
 */
 
-void Send::Print()
+void SendToVToVision::Print()
 {
   std::cout << "(x,y) = (" << x << ", " << y << ")" << std::endl;
 }
 
-void Send::Write(float x1, float y1)
+void SendToVToVision::Write(float x1, float y1)
+{
+  x = x1;
+  y = y1;
+}
+
+/*
+ *
+ * ReceiveFromVision class for receiving
+ *
+*/
+
+void ReceiveFromVision::Print()
+
+{
+  std::cout << "(x,y) = (" << x << ", " << y << ")" << std::endl;
+}
+
+void ReceiveFromVision::Write(float x1, float y1)
+{
+  x = x1;
+  y = y1;
+}
+
+/*
+ *
+ * SendToVision class for trasnmission
+ *
+*/
+
+void SendToVision::Print()
+{
+  std::cout << "(x,y) = (" << x << ", " << y << ")" << std::endl;
+}
+
+void SendToVision::Write(float x1, float y1)
 {
   x = x1;
   y = y1;

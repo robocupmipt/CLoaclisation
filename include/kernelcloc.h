@@ -19,5 +19,6 @@ class KernelCLoc {
 
  private:
   GameState game_;
-  Message<MessageType<Send>, MessageType<Receive>> message_;
+  Message<MessageType<SendToStrategy>, MessageType<ReceiveFromStrategy>> message_for_strategy_;
+  Message<MessageType<SendToVision>, MessageType<ReceiveFromVision>> message_for_vision_;
 };
