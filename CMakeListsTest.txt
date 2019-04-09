@@ -12,13 +12,7 @@ find_package(qibuild)
 set(_srcs
         src/kernelcloc.cpp
         src/remoteloc.cpp
-        include/config.h
-        include/kernelcloc.h
-        include/remoteloc.h
-        messenger/channels.h
-        messenger/custom.h
-        messenger/custom.cpp
-        messenger/message.h
+        lib/custom.cpp
         main.cpp
         )
 
@@ -38,6 +32,6 @@ qi_create_bin(remoteloc ${_srcs})
 # This will set the libraries to link sayhelloworld with,
 # the include paths, and so on
 target_include_directories(remoteloc PUBLIC "include")
-target_include_directories(remoteloc PUBLIC "messenger")
+target_include_directories(remoteloc PUBLIC "lib")
 
 qi_use_lib(remoteloc ALCOMMON ALPROXIES ALVISION OPENCV3_CORE OPENCV3_HIGHGUI OPENCV3_IMGCODECS OPENCV3_IMGPROC OPENCV3_OBJDETECT )

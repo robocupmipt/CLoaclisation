@@ -19,6 +19,7 @@ void KernelCLoc::ReceiveLoop() {
 
   while(true) {
     MessageType<ReceiveFromVision> income_message = message_for_vision_.ReceiveMessage();
+    std::cout << "SUCCESSFULLY RECEIVE\n";
     income_message.data.Print();
   }
 }

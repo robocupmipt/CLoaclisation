@@ -10,7 +10,7 @@ void RemoteLoc::init() {
   kernel_.StartModule();
 
   while (true) {
-    std::string command(SmallLog("ENTER command", 1, true));
+    //std::string command(SmallLog("ENTER command", 1, true));
   }
 }
 
