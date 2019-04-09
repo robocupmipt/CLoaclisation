@@ -7,6 +7,7 @@ class KernelCLoc {
  public:
   KernelCLoc(boost::shared_ptr <AL::ALBroker> broker_);
 
+
  private:
   GameState game_;
 };
